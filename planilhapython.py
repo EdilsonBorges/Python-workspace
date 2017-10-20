@@ -17,3 +17,7 @@ pp = pprint.PrettyPrinter()
 result = sheet.cell(5,13).value		# specific cell
 
 pp.pprint(result)
+
+sheet.update_cell(5,13,'testing update') # updating record
+result = sheet.cell(5,13).value
+pp.print(result)
