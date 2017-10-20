@@ -12,6 +12,8 @@ sheet = client.open('planilha_python').sheet1
 
 pp = pprint.PrettyPrinter()
 
-result = sheet.row_values(10)
+#result = sheet.get_all_records()	# all records
+#result = sheet.row_values(10)		# just a row
+result = sheet.cell(5,13).value		# specific cell
 
 pp.pprint(result)
