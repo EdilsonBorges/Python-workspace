@@ -11,5 +11,7 @@ client = gspread.authorize(creds)
 sheet = client.open('planilha_python').sheet1
 
 pp = pprint.PrettyPrinter()
-planilha_python = sheet.get_all_records()
-pp.pprint(planilha_python)
+
+result = sheet.row_values(10)
+
+pp.pprint(result)
