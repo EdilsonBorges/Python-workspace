@@ -12,12 +12,13 @@ sheet = client.open('planilha_python').sheet1
 
 pp = pprint.PrettyPrinter()
 
-#result = sheet.get_all_records()	# all records
-#result = sheet.row_values(10)		# just a row
-result = sheet.cell(5,4).value		# specific cell
+# result = sheet.get_all_records()	# all records
+# result = sheet.row_values(2)		# just a row
+# result = sheet.cell(5,4).value	# specific cell
+result = sheet.range('A1:D9')		# specific range
 
 pp.pprint(result)
 
-sheet.update_cell(5,4,'testing update') # updating record
-result = sheet.cell(5,4).value
-pp.pprint(result)
+# sheet.update_cell(5,4,'testing update') # updating record
+# result = sheet.cell(5,4).value
+# pp.pprint(result)
