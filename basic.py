@@ -20,3 +20,6 @@ print('Hi there'[4:6]) # range
 
 print('Hi\nthere\n!')
 
+print('C:\\\something')
+print(r'C:\\something') # ignoring internal scaping by using r
+
