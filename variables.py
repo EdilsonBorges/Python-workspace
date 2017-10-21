@@ -14,3 +14,10 @@ print(type(myInt), myInt)
 print(type(myFloat), myFloat)
 print(type(myList), myList)
 print(type(myDict), myDict)
+
+print(myList[3])
+print(myDict['c'])
+
+print(myStr, 'World')
+greeting = myStr + ' World'
+print(greeting)
