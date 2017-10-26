@@ -1,1 +1,5 @@
-<h1>Hello from templates/index, {{name}}</h1>
+<ul>
+	{% for todo in todos %}
+		<li>{{todo.title}}: {{todo.text}}</li>
+	{% endfor %}
+</ul>
