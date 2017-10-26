@@ -10,8 +10,8 @@ def index(request):
 	}
 	return render(request, 'index.html', context)
 
-def details(request, todo_id):
-	todo = Todo.objects.get(id = todo_id)
+def details(request, id):
+	todo = Todo.objects.get(id = id)
 	context = {
 		'todo': todo
 	}
